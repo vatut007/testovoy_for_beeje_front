@@ -4,6 +4,8 @@ import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/header/component.tsx'
 import { StrictMode } from 'react'
+import { Provider } from 'react-redux'
+import {store} from './services/store.ts'
 
 const root = createRoot(
   document.getElementById("root") as HTMLElement,
@@ -11,11 +13,13 @@ const root = createRoot(
 
 root.render(
   <StrictMode>
-    <Header />
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<App />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   </StrictMode>
 )
