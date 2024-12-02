@@ -11,3 +11,7 @@
     justify-content: space-between;
     padding: 0px 20px;
 }
+.loginCreateTask{
+    display: flex;
+    gap: 10px;
+}

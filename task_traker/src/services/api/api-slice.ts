@@ -5,7 +5,7 @@ export const Api = createApi({
     reducerPath: 'taskApi',
     baseQuery: fetchBaseQuery({baseUrl:'api/'}),
     endpoints: (builder) => ({
-      getTasks: builder.query<Task[],undefined>({
+      getTasks: builder.query<Task,undefined>({
         query: () => '/get_tasks',
       }),
     }),

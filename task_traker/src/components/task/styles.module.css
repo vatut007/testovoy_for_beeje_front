@@ -5,14 +5,17 @@
     border: 3px solid;
     border-radius: 6px;
     margin: 20px;
+    min-width: 300px;
+    overflow-wrap: anywhere;
+    overflow: overlay;
 }
 .content{
     padding: 20px;
     background-color:  #FFFEFC;
+    white-space: normal;
 }
 .textEmail{
     display: flex;
-    justify-content: center;
 }
 .coorentEmail{
     font-size: large;

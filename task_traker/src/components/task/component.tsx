@@ -17,7 +17,7 @@ export function Task({ id, text, email, is_done }: TaskProps) {
                     <p className={styles.coorentEmail}>
                         Email:&ensp;
                     </p>
-                    <p>
+                    <p className={styles.coorentEmail}>
                         {email}
                     </p>
                 </div>

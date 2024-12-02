@@ -1,0 +1,11 @@
+.paginator{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.selectNumber{
+    background-color: grey;
+}
+.noSelectNumber:hover{
+    background-color: grey;
+}
