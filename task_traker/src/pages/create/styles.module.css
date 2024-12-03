@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
