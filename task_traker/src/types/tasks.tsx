@@ -4,6 +4,7 @@ export type Task = {
     result: {
         id: number;
         email: string,
+        username: string,
         text: string,
         is_done: boolean
     }[]

@@ -15,7 +15,7 @@ export function Paginator({page,totalPages,setPage}:PaginatorProps) {
                 if (number==page){
                     return <p className={styles.selectNumber}>{number}</p>
                 }
-                return <p className={styles.noSelectNumbe} onClick={()=>{setPage(number)}}>{number}</p>
+                return <p className={styles.noSelectNumber} onClick={()=>{setPage(number)}}>{number}</p>
                 })}
         </div>
     )

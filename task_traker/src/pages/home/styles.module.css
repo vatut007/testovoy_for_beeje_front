@@ -9,6 +9,15 @@
     justify-content: center;
     margin-top: 120px;
 }
+.sorted{
+    display: flex;
+    padding-left: 20px;
+}
+.sortedClick{
+    display: flex;
+    padding-left: 20px;
+    background-color: grey
+}
 @media (max-width: 800px) {
     .home{
         flex-direction: column;

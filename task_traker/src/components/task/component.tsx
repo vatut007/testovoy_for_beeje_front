@@ -3,10 +3,11 @@ import styles from "./styles.module.css"
 interface TaskProps {
     id: number,
     text: string,
+    username: string,
     email: string,
     is_done: boolean
 }
-export function Task({ id, text, email, is_done }: TaskProps) {
+export function Task({ id, text, email, username, is_done }: TaskProps) {
     return (
         <div className={styles.task}>
             <div className={styles.content}>
@@ -22,7 +23,13 @@ export function Task({ id, text, email, is_done }: TaskProps) {
                     </p>
                 </div>
                 <p>
+                    Имя: {username}
+                </p>
+                <p>
                     Текст задачи: {text}
+                </p>
+                <p>
+                    Статус задачи: {is_done?'Выпонено':'Невыполнено'}
                 </p>
             </div>
         </div>
