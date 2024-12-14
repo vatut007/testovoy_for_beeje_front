@@ -1,22 +1,22 @@
-.header{
-    display: flex;
-    position: sticky;
-    background-color: #25252a;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
-    color: white;
-    justify-content: space-between;
-    padding: 0px 20px;
+.header {
+  display: flex;
+  position: sticky;
+  background-color: #25252a;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  color: white;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
-.loginCreateTask{
-    display: flex;
-    gap: 10px;
+.loginCreateTask {
+  display: flex;
+  gap: 10px;
 }
 .headerText:active,
-.headerText:hover, 
+.headerText:hover,
 .headerText {
   text-decoration: none;
   color: white;

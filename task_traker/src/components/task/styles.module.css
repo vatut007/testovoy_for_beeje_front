@@ -1,22 +1,32 @@
-.task{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 3px solid;
-    border-radius: 6px;
-    margin: 20px;
-    min-width: 300px;
-    overflow-wrap: anywhere;
-    overflow: overlay;
+.task {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid;
+  border-radius: 6px;
+  margin: 20px;
+  min-width: 300px;
+  overflow-wrap: anywhere;
+  overflow: overlay;
 }
-.content{
-    padding: 20px;
-    background-color:  #FFFEFC;
-    white-space: normal;
+.content {
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: #fffefc;
+  white-space: normal;
 }
-.textEmail{
-    display: flex;
+.textEmail {
+  display: flex;
 }
-.coorentEmail{
-    font-size: large;
+.coorentEmail {
+  font-size: large;
+}
+.pensil {
+  display: flex;
+  margin: 0;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 20px;
 }

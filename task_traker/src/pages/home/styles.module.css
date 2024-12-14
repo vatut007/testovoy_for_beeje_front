@@ -1,26 +1,26 @@
-.home{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 30vw;
-    justify-content: center;
+.home {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30vw;
+  justify-content: center;
 }
-.notContent{
-    display: flex;
-    justify-content: center;
-    margin-top: 120px;
+.notContent {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
 }
-.sorted{
-    display: flex;
-    padding-left: 20px;
+.sorted {
+  display: flex;
+  padding-left: 20px;
 }
-.sortedClick{
-    display: flex;
-    padding-left: 20px;
-    background-color: grey
+.sortedClick {
+  display: flex;
+  padding-left: 20px;
+  background-color: grey;
 }
 @media (max-width: 800px) {
-    .home{
-        flex-direction: column;
-        margin: 2px;
-    }
+  .home {
+    flex-direction: column;
+    margin: 2px;
+  }
 }
