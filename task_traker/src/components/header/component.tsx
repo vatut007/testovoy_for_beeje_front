@@ -4,12 +4,9 @@ import { useGetMeQuery, useLogoutMutation } from "../../services/api/api-slice";
 import { useEffect } from "react";
 
 export function Header() {
-  const { data: user, refetch } = useGetMeQuery(undefined);
+  const { data: user, refetch} = useGetMeQuery(undefined);
   const navigate = useNavigate();
   const [logout] = useLogoutMutation();
-  useEffect(() => {
-    refetch;
-  });
   return (
     <div className={styles.header}>
       <Link to="/">
@@ -21,10 +18,11 @@ export function Header() {
         </Link>
         <p
           className={styles.headerText}
-          onClick={() => {
+          onClick={async () => {
             if (user) {
-              logout(undefined);
-              navigate("/logout");
+              await logout(undefined);
+              await refetch();
+              document.location.reload()
             } else {
               navigate("login");
             }

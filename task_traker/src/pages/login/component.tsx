@@ -18,7 +18,8 @@ export function LoginPage() {
   const [login, { data, error, isLoading }] = useLoginMutation();
   const onSubmit: SubmitHandler<Login> = async (data) => {
     await login({ username: data.username, password: data.password });
-    refetch;
+    await refetch();
+    await navigate('/')
   };
   const navigate = useNavigate();
   return (
@@ -50,7 +51,7 @@ export function LoginPage() {
               </div>
             </div>
           </div>
-          <input type="submit" value="Войти" onClick={() => navigate("/")} />
+          <input type="submit" value="Войти"/>
         </div>
       </form>
     </div>
